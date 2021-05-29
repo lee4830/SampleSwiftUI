@@ -19,6 +19,10 @@
 		F9763D33266268370007D6C4 /* CarMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D32266268370007D6C4 /* CarMaker.swift */; };
 		F9763D35266269680007D6C4 /* ListNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D34266269680007D6C4 /* ListNav.swift */; };
 		F9763D3726626BF30007D6C4 /* ListNavDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D3626626BF30007D6C4 /* ListNavDetail.swift */; };
+		F9763D39266271490007D6C4 /* BindingTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D38266271490007D6C4 /* BindingTest2.swift */; };
+		F9763D3B266274540007D6C4 /* ObservableObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D3A266274540007D6C4 /* ObservableObjectTest.swift */; };
+		F9763D3D26627BDE0007D6C4 /* ObservableObjectTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D3C26627BDE0007D6C4 /* ObservableObjectTest2.swift */; };
+		F9763D3F2662805E0007D6C4 /* EnviromentObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D3E2662805E0007D6C4 /* EnviromentObjectTest.swift */; };
 		F9961C0F2661F4E500376505 /* WebviewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9961C0E2661F4E500376505 /* WebviewContentView.swift */; };
 		F9961C112661F54B00376505 /* MyWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9961C102661F54B00376505 /* MyWebview.swift */; };
 		F9C164CD26610BA4004E6535 /* Smaple_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C164CC26610BA4004E6535 /* Smaple_SwiftUIApp.swift */; };
@@ -59,6 +63,10 @@
 		F9763D32266268370007D6C4 /* CarMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMaker.swift; sourceTree = "<group>"; };
 		F9763D34266269680007D6C4 /* ListNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNav.swift; sourceTree = "<group>"; };
 		F9763D3626626BF30007D6C4 /* ListNavDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavDetail.swift; sourceTree = "<group>"; };
+		F9763D38266271490007D6C4 /* BindingTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTest2.swift; sourceTree = "<group>"; };
+		F9763D3A266274540007D6C4 /* ObservableObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectTest.swift; sourceTree = "<group>"; };
+		F9763D3C26627BDE0007D6C4 /* ObservableObjectTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectTest2.swift; sourceTree = "<group>"; };
+		F9763D3E2662805E0007D6C4 /* EnviromentObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentObjectTest.swift; sourceTree = "<group>"; };
 		F9961C0E2661F4E500376505 /* WebviewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewContentView.swift; sourceTree = "<group>"; };
 		F9961C102661F54B00376505 /* MyWebview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebview.swift; sourceTree = "<group>"; };
 		F9C164C926610BA4004E6535 /* Smaple SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smaple SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +137,10 @@
 				F9763D32266268370007D6C4 /* CarMaker.swift */,
 				F9763D34266269680007D6C4 /* ListNav.swift */,
 				F9763D3626626BF30007D6C4 /* ListNavDetail.swift */,
+				F9763D38266271490007D6C4 /* BindingTest2.swift */,
+				F9763D3A266274540007D6C4 /* ObservableObjectTest.swift */,
+				F9763D3C26627BDE0007D6C4 /* ObservableObjectTest2.swift */,
+				F9763D3E2662805E0007D6C4 /* EnviromentObjectTest.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -326,19 +338,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9763D2C26624B9B0007D6C4 /* Page2.swift in Sources */,
+				F9763D39266271490007D6C4 /* BindingTest2.swift in Sources */,
 				F9C164CF26610BA4004E6535 /* ContentView.swift in Sources */,
 				F9763D3726626BF30007D6C4 /* ListNavDetail.swift in Sources */,
 				F9961C112661F54B00376505 /* MyWebview.swift in Sources */,
 				F9763D2F26625FD90007D6C4 /* BindingTest.swift in Sources */,
 				F9190A2A26611514001A27BE /* MyTextView.swift in Sources */,
+				F9763D3F2662805E0007D6C4 /* EnviromentObjectTest.swift in Sources */,
 				F9763D35266269680007D6C4 /* ListNav.swift in Sources */,
 				F9763D2326623ACB0007D6C4 /* CombineWebview.swift in Sources */,
+				F9763D3B266274540007D6C4 /* ObservableObjectTest.swift in Sources */,
 				F9961C0F2661F4E500376505 /* WebviewContentView.swift in Sources */,
 				F9C164CD26610BA4004E6535 /* Smaple_SwiftUIApp.swift in Sources */,
 				F9763D31266262840007D6C4 /* NavigationTest.swift in Sources */,
 				F9763D28266249C60007D6C4 /* TestView.swift in Sources */,
 				F9190A2826610F19001A27BE /* MyVstackView.swift in Sources */,
 				F9763D33266268370007D6C4 /* CarMaker.swift in Sources */,
+				F9763D3D26627BDE0007D6C4 /* ObservableObjectTest2.swift in Sources */,
 				F9763D2A26624A620007D6C4 /* Page1.swift in Sources */,
 				F9763D26266248E50007D6C4 /* ViewRouter.swift in Sources */,
 			);

@@ -27,7 +27,17 @@ struct TestView:View{
                 NavigationTest(viewRouter:viewRouter)
             }else if viewRouter.currentPage == "ListNav"{
                 ListNav(viewRouter:viewRouter)
+            }else if viewRouter.currentPage == "BindingTest2"{
+                BindingTest2(viewRouter:viewRouter)
+            }else if viewRouter.currentPage == "ObservableObjectTest"{
+                ObservableObjectTest(viewRouter:viewRouter)
+            }else if viewRouter.currentPage == "ObservableObjectTest2"{
+                ObservableObjectTest2(viewRouter:viewRouter)
+            }else if viewRouter.currentPage == "EnviromentObjectTest"{
+                EnviromentObjectTest(viewRouter:viewRouter).environmentObject(CountRepo3())
             }
+            
+            
             else{
                 ContentView(viewRouter:viewRouter)
             }

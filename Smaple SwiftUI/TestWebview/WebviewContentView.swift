@@ -38,7 +38,7 @@ struct WebviewContentView:View {
                 }
                 NavigationLink(
                     destination: CombineWebview()
-                        .edgesIgnoringSafeArea(.all)
+//                        .edgesIgnoringSafeArea(.all)
                 ){
                     Text("combine")
                         .font(.system(size:20))

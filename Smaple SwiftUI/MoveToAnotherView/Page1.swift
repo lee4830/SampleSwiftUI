@@ -7,30 +7,42 @@
 
 import SwiftUI
 
+struct MyItems{
+    let name: String
+}
+extension MyItems{
+    static func all()->[MyItems]{
+        return[
+            MyItems(name:"page2"),
+            MyItems(name:"BindingTest"),
+            MyItems(name:"NavigationTest"),
+            MyItems(name:"ListNav"),
+            MyItems(name:"BindingTest2"),
+            MyItems(name:"ObservableObjectTest"),        
+            MyItems(name:"ObservableObjectTest2"),
+            MyItems(name:"EnviromentObjectTest"),        
+            MyItems(name:"ContentView")
+        ]
+    }
+}
+
 struct Page1: View {
     
     @ObservedObject var viewRouter:ViewRouter
+    
+    let items = MyItems.all()
     
     var body: some View{
         VStack{
             Text("Page1")
             
-            Button(action:{self.viewRouter.currentPage = "page2"}){
-                Text("page2")
-            }
-            Button(action:{self.viewRouter.currentPage = "BindingTest"}){
-                Text("BindingTest")
-            }
-            Button(action:{self.viewRouter.currentPage = "NavigationTest"}){
-                Text("NavigationTest")
+            List(self.items,id:\.name){temp in
+                Button(action:{self.viewRouter.currentPage = temp.name}){
+                    Text("\(temp.name)")
+                }
             }
             
-            Button(action:{self.viewRouter.currentPage = "ListNav"}){
-                Text("ListNav")
-            }
-            Button(action:{self.viewRouter.currentPage = ""}){
-                Text("ContentView")
-            }
+
         }
     }
 }

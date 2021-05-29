@@ -56,7 +56,9 @@ struct ContentView: View {
                 }
                 
                 NavigationLink(
-                    destination: WebviewContentView()){
+                    destination: WebviewContentView()
+                        .edgesIgnoringSafeArea([.top,.trailing])
+                ){
                     Text("웹뷰")
                         .font(.system(size:30))
                         .fontWeight(.heavy)
@@ -81,7 +83,7 @@ struct ContentView: View {
             //네비게이션바 타이틀 숨김.
             //            .navigationTitle("타이틀")
             //            .navigationBarHidden(true)
-            
+            .navigationBarTitle("title",displayMode: .inline)
         }//NavigationView
         
         

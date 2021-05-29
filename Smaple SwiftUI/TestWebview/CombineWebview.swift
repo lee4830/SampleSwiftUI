@@ -21,9 +21,11 @@ struct CombineWebview:View {
             Text("abc")
                 .font(.system(size:20))
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                
-            Spacer()
-            Spacer()
+                .onTapGesture {
+                    print("navigationBarHidden = true")
+                    navigationBarHidden(true)
+                }
+            
         }
     }
     
