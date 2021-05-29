@@ -11,7 +11,10 @@ import SwiftUI
 struct Smaple_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            
+            //Combine ObservableObject를 이용한 페이지 이동.
+            TestView(viewRouter: ViewRouter())
         }
     }
 }

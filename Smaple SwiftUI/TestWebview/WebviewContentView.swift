@@ -14,7 +14,7 @@ struct WebviewContentView:View {
             HStack{
                 NavigationLink(
                     destination: MyWebview(urlToLoad: "https://www.naver.com")
-                        .edgesIgnoringSafeArea(.all)
+//                        .edgesIgnoringSafeArea([.leading,.trailing,.bottom])
                 ){
                     Text("naver.com")
                         .font(.system(size:20))
@@ -37,10 +37,10 @@ struct WebviewContentView:View {
                         .cornerRadius(20)
                 }
                 NavigationLink(
-                    destination: MyWebview(urlToLoad: "https://www.google.com")
+                    destination: CombineWebview()
                         .edgesIgnoringSafeArea(.all)
                 ){
-                    Text("google.com")
+                    Text("combine")
                         .font(.system(size:20))
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .padding(10)

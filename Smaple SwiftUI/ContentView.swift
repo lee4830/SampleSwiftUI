@@ -13,6 +13,8 @@ struct ContentView: View {
     @State
     private var isActivated:Bool = false
     
+    @ObservedObject var viewRouter:ViewRouter
+    
     var body: some View {
         
        
@@ -65,6 +67,12 @@ struct ContentView: View {
                         .foregroundColor(Color.black)
                         .cornerRadius(30)
                 }
+                
+                Button(action:{viewRouter.currentPage = "test"}){
+                    Text("TestPage")
+                }
+                
+                
 
             }//VStack
             .frame(minWidth: 0, maxWidth: .infinity,
@@ -73,8 +81,8 @@ struct ContentView: View {
             //네비게이션 바 기본값인 .Large에서 작은 값으로 변경
 //            .navigationBarTitleDisplayMode(.inline)
             //네비게이션바 타이틀 숨김.
-            .navigationTitle("타이틀")
-            .navigationBarHidden(true)
+//            .navigationTitle("타이틀")
+//            .navigationBarHidden(true)
 
         }//NavigationView
         
@@ -89,7 +97,8 @@ struct ContentView: View {
 
 
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        ContentView()
+        ContentView(viewRouter:ViewRouter())
     }
 }

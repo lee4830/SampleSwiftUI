@@ -20,6 +20,7 @@ struct MyWebview:UIViewRepresentable, WebViewHandlerDelegate{
     }
     
     
+    
     var urlToLoad: String
     
     func makeCoordinator() -> MyWebview.Coordinator {
@@ -49,6 +50,7 @@ struct MyWebview:UIViewRepresentable, WebViewHandlerDelegate{
         
         //웹뷰 인스턴스 생성
         let webview = WKWebView(frame:CGRect.zero, configuration: configuration)
+//        let webview = WKWebView()
         webview.navigationDelegate = context.coordinator
         
     
@@ -63,10 +65,10 @@ struct MyWebview:UIViewRepresentable, WebViewHandlerDelegate{
     
     //업데이트 ui view
     func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<MyWebview>) {
-//        guard let mUrl = URL(string:self.urlToLoad) else{
-//            return
-//        }
-//        uiView.load(URLRequest(url:mUrl))
+        guard let mUrl = URL(string:self.urlToLoad) else{
+            return
+        }
+        uiView.load(URLRequest(url:mUrl))
     }
     
     
@@ -115,7 +117,7 @@ struct MyWebview_Previews: PreviewProvider{
     }
 }
 
-
+//규약 정의
 protocol WebViewHandlerDelegate{
     func receivedJsonValudeFromWebView(value:[String: Any?])
     func receivedStringValueFromWebView(value: String)
