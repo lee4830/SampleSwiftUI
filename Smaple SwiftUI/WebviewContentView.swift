@@ -13,7 +13,7 @@ struct WebviewContentView:View {
         
             HStack{
                 NavigationLink(
-                    destination: MyWebview(urlToLoad: "https://m.naver.com")
+                    destination: MyWebview(urlToLoad: "https://www.naver.com")
                         .edgesIgnoringSafeArea(.all)
                 ){
                     Text("naver.com")
@@ -25,7 +25,7 @@ struct WebviewContentView:View {
                         .cornerRadius(20)
                                         }
                 NavigationLink(
-                    destination: MyWebview(urlToLoad: "https://m.daum.net")
+                    destination: MyWebview(urlToLoad: "https://www.daum.net")
                         .edgesIgnoringSafeArea(.all)
                 ){
                     Text("daum.net")
