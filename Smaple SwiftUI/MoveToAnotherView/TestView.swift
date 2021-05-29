@@ -21,6 +21,12 @@ struct TestView:View{
                 Page2(viewRouter:viewRouter)
             }else if viewRouter.currentPage == "test"{
                 TestView(viewRouter:ViewRouter())
+            }else if viewRouter.currentPage == "BindingTest"{
+                BindingTest(viewRouter:viewRouter)
+            }else if viewRouter.currentPage == "NavigationTest"{
+                NavigationTest(viewRouter:viewRouter)
+            }else if viewRouter.currentPage == "ListNav"{
+                ListNav(viewRouter:viewRouter)
             }
             else{
                 ContentView(viewRouter:viewRouter)

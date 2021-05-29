@@ -17,35 +17,33 @@ struct ContentView: View {
     
     var body: some View {
         
-       
-        
         
         NavigationView{
             VStack{
-
+                
                 HStack{
-
+                    
                     //MyVstackView 안에 값에 바인딩
                     MyVstackView(isActivated: $isActivated)
                     MyVstackView(isActivated: $isActivated)
                     MyVstackView(isActivated: $isActivated)
-
-
+                    
+                    
                 }//HStack
                 .padding(self.isActivated ? 20.0 : 10.0)
                 .background(self.isActivated ? Color.yellow : Color.black)
                 .onTapGesture {
-
+                    
                     withAnimation{
                         self.isActivated.toggle()
                     }
-
+                    
                     print("HStack이 클릭됨.")
-
+                    
                 }//HStack onTapGesture
-
-
-
+                
+                
+                
                 NavigationLink(
                     destination: MyTextView(isActivated: $isActivated)){
                     Text("네비게이션")
@@ -56,7 +54,7 @@ struct ContentView: View {
                         .foregroundColor(Color.black)
                         .cornerRadius(30)
                 }
-
+                
                 NavigationLink(
                     destination: WebviewContentView()){
                     Text("웹뷰")
@@ -73,18 +71,22 @@ struct ContentView: View {
                 }
                 
                 
-
+                
             }//VStack
             .frame(minWidth: 0, maxWidth: .infinity,
                    minHeight: 0, maxHeight: .infinity)
             .background(Color.green)
             //네비게이션 바 기본값인 .Large에서 작은 값으로 변경
-//            .navigationBarTitleDisplayMode(.inline)
+            //            .navigationBarTitleDisplayMode(.inline)
             //네비게이션바 타이틀 숨김.
-//            .navigationTitle("타이틀")
-//            .navigationBarHidden(true)
-
+            //            .navigationTitle("타이틀")
+            //            .navigationBarHidden(true)
+            
         }//NavigationView
+        
+        
+        
+        
         
         
     

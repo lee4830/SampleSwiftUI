@@ -18,6 +18,16 @@ struct Page1: View {
             Button(action:{self.viewRouter.currentPage = "page2"}){
                 Text("page2")
             }
+            Button(action:{self.viewRouter.currentPage = "BindingTest"}){
+                Text("BindingTest")
+            }
+            Button(action:{self.viewRouter.currentPage = "NavigationTest"}){
+                Text("NavigationTest")
+            }
+            
+            Button(action:{self.viewRouter.currentPage = "ListNav"}){
+                Text("ListNav")
+            }
             Button(action:{self.viewRouter.currentPage = ""}){
                 Text("ContentView")
             }
