@@ -35,6 +35,8 @@ struct TestView:View{
                 ObservableObjectTest2(viewRouter:viewRouter)
             }else if viewRouter.currentPage == "EnviromentObjectTest"{
                 EnviromentObjectTest(viewRouter:viewRouter).environmentObject(CountRepo3())
+            }else if viewRouter.currentPage == "ViewDragTest"{
+                ViewDragTest(viewRouter:viewRouter)
             }
             
             

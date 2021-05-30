@@ -23,6 +23,7 @@
 		F9763D3B266274540007D6C4 /* ObservableObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D3A266274540007D6C4 /* ObservableObjectTest.swift */; };
 		F9763D3D26627BDE0007D6C4 /* ObservableObjectTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D3C26627BDE0007D6C4 /* ObservableObjectTest2.swift */; };
 		F9763D3F2662805E0007D6C4 /* EnviromentObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D3E2662805E0007D6C4 /* EnviromentObjectTest.swift */; };
+		F9763D4126634BAF0007D6C4 /* ViewDragTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9763D4026634BAF0007D6C4 /* ViewDragTest.swift */; };
 		F9961C0F2661F4E500376505 /* WebviewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9961C0E2661F4E500376505 /* WebviewContentView.swift */; };
 		F9961C112661F54B00376505 /* MyWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9961C102661F54B00376505 /* MyWebview.swift */; };
 		F9C164CD26610BA4004E6535 /* Smaple_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C164CC26610BA4004E6535 /* Smaple_SwiftUIApp.swift */; };
@@ -67,6 +68,7 @@
 		F9763D3A266274540007D6C4 /* ObservableObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectTest.swift; sourceTree = "<group>"; };
 		F9763D3C26627BDE0007D6C4 /* ObservableObjectTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectTest2.swift; sourceTree = "<group>"; };
 		F9763D3E2662805E0007D6C4 /* EnviromentObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentObjectTest.swift; sourceTree = "<group>"; };
+		F9763D4026634BAF0007D6C4 /* ViewDragTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDragTest.swift; sourceTree = "<group>"; };
 		F9961C0E2661F4E500376505 /* WebviewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewContentView.swift; sourceTree = "<group>"; };
 		F9961C102661F54B00376505 /* MyWebview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebview.swift; sourceTree = "<group>"; };
 		F9C164C926610BA4004E6535 /* Smaple SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smaple SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 				F9763D3A266274540007D6C4 /* ObservableObjectTest.swift */,
 				F9763D3C26627BDE0007D6C4 /* ObservableObjectTest2.swift */,
 				F9763D3E2662805E0007D6C4 /* EnviromentObjectTest.swift */,
+				F9763D4026634BAF0007D6C4 /* ViewDragTest.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				F9763D2C26624B9B0007D6C4 /* Page2.swift in Sources */,
 				F9763D39266271490007D6C4 /* BindingTest2.swift in Sources */,
+				F9763D4126634BAF0007D6C4 /* ViewDragTest.swift in Sources */,
 				F9C164CF26610BA4004E6535 /* ContentView.swift in Sources */,
 				F9763D3726626BF30007D6C4 /* ListNavDetail.swift in Sources */,
 				F9961C112661F54B00376505 /* MyWebview.swift in Sources */,

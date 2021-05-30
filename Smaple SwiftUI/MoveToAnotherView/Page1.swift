@@ -20,7 +20,8 @@ extension MyItems{
             MyItems(name:"BindingTest2"),
             MyItems(name:"ObservableObjectTest"),        
             MyItems(name:"ObservableObjectTest2"),
-            MyItems(name:"EnviromentObjectTest"),        
+            MyItems(name:"EnviromentObjectTest"),
+            MyItems(name:"ViewDragTest"),
             MyItems(name:"ContentView")
         ]
     }
@@ -36,6 +37,7 @@ struct Page1: View {
         VStack{
             Text("Page1")
             
+            //id:\.self ?
             List(self.items,id:\.name){temp in
                 Button(action:{self.viewRouter.currentPage = temp.name}){
                     Text("\(temp.name)")
